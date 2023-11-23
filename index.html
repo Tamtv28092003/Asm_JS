@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-menu">
+                <div class="image-logo">
+                    <a href="">
+                        <img src="image/delivery 1.png" alt="">
+                    </a>
+                </div>
+                <div class="thuonghieu">
+                    <a href="">
+                        <img src="image/logo_1 1.png" alt="">
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="dangnhap.html" class="signin">Đăng nhập</a>
+                    <a href="" class="tiengviet">EN | VN</a>
+                    <a href="" class="cart"><iconify-icon icon="mdi:cart"></iconify-icon></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner" id="slider">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./image/khunganh1.png" style="display: block; width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./image/khunganh2.png" style="display: block;width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./image/khunganh3.png" style="display: block;width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+
+<!-- 
+        <section class="content">
+            <div class="content-body">
+                <div class="content-item">
+                    <div class="content-item1">
+                        <img src="./image/anhlon.png" alt="">
+                    </div>
+                    <div class="content-item2">
+                        <img src="./image/anhnho1.png" alt="">
+                        <img src="./image/anhnho2.png" alt="">
+                        <img src="./image/anhnho3.png" alt="">
+                        <img src="./image/anhnho4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="content-form">
+                    <div class="form-body">
+                        <div class="form-row">
+                            <h4>Trà Ô Long Mãng Cầu</h4>
+                            <form action="">
+                                <div class="content-form1">
+                                    <label for="">Kích thước</label>
+                                    <button>S</button>
+                                    <button>M</button>
+                                    <button>L</button>
+                                </div>
+
+                                <div class="content-form2">
+                                    <label for="">Kích thước</label>
+                                    <button>-</button>
+                                    <input type="number">
+                                    <button>+</button>
+                                </div>
+
+                                <div class="content-form3" style="display: flex;">
+                                    <label for="">Ghi chú</label>
+                                    <div>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="content-form4">
+                                    <label for="">Giá</label>
+                                    <span>50.000 đ</span>
+                                </div>
+
+                                <div class="content-form5">
+                                    <button>THÊM VÀO GIỎ HÀNG</button>
+                                    <button>MUA HÀNG</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <div class="container1">
+            <div class="box">
+                <img src="main-image.jpg" alt="Main Image">
+                <img src="thumbnail1.jpg" alt="Thumbnail 1">
+                <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                <img src="thumbnail4.jpg" alt="Thumbnail 4">
+            </div>
+            <div class="box form">
+                <form>
+                    <label for="size">Kích thước:</label>
+                    <input type="text" id="size" name="size" required>
+    
+                    <label for="quantity">Số lượng:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+    
+                    <label for="price">Giá:</label>
+                    <input type="text" id="price" name="price" required>
+    
+                    <label for="note">Ghi chú:</label>
+                    <textarea id="note" name="note"></textarea>
+    
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
