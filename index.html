@@ -62,7 +62,7 @@
         </section>
 
 
-<!-- 
+
         <section class="content">
             <div class="content-body">
                 <div class="content-item">
@@ -80,45 +80,47 @@
                 <div class="content-form">
                     <div class="form-body">
                         <div class="form-row">
-                            <h4>Trà Ô Long Mãng Cầu</h4>
                             <form action="">
-                                <div class="content-form1">
-                                    <label for="">Kích thước</label>
-                                    <button>S</button>
-                                    <button>M</button>
-                                    <button>L</button>
-                                </div>
-
-                                <div class="content-form2">
-                                    <label for="">Kích thước</label>
-                                    <button>-</button>
-                                    <input type="number">
-                                    <button>+</button>
-                                </div>
-
-                                <div class="content-form3" style="display: flex;">
-                                    <label for="">Ghi chú</label>
-                                    <div>
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <div class="form-oder">
+                                    <h4>Trà Ô Long Mãng Cầu</h4>
+                                    <div class="content-form1">
+                                        <label for="" class="size-label">Kích thước: </label>
+                                        <button class="selected" onclick="changeColor(this)">S</button>
+                                        <button class="selected" onclick="changeColor(this)">M</button>
+                                        <button class="selected" onclick="changeColor(this)">L</button>
                                     </div>
-                                </div>
 
-                                <div class="content-form4">
-                                    <label for="">Giá</label>
-                                    <span>50.000 đ</span>
-                                </div>
+                                    <div class="content-form2">
+                                        <label for="" class="quantity-label">Số lượng: </label>
+                                        <button>-</button>
+                                        <input type="number">
+                                        <button>+</button>
+                                    </div>
 
-                                <div class="content-form5">
-                                    <button>THÊM VÀO GIỎ HÀNG</button>
-                                    <button>MUA HÀNG</button>
+                                    <div class="content-form3" style="display: flex;">
+                                        <label for="" class="note-label">Ghi chú:</label>
+                                        <div>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form4">
+                                        <label for="" class="price-label">Giá:</label>
+                                        <span style="color: #125F2F; font-weight: bold;">50.000 đ</span>
+                                    </div>
+
+                                    <div class="content-form5">
+                                        <button class="btn-add__cart" type="submit" >THÊM VÀO GIỎ HÀNG</button >
+                                        <button class="btn-cart"  type="submit" >MUA HÀNG</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <div class="container1">
+        </section>
+        <!-- <div class="container1">
             <div class="box">
                 <img src="main-image.jpg" alt="Main Image">
                 <img src="thumbnail1.jpg" alt="Thumbnail 1">
@@ -143,7 +145,7 @@
                     <button type="submit">Gửi</button>
                 </form>
             </div>
-        </div>
+        </div> -->
 
     </div>
 

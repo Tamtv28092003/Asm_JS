@@ -148,65 +148,104 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-
-.content-body{
-    display: flex; 
-    justify-content: space-between;
-    gap: 70px
+.content {
+  margin-top: 50px;
 }
 
-.content-item{
-    margin-left: 120px;
-    margin-top: 50px;
+.content-body {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
 }
-.content-item2{
-    display: flex;
-    gap: 10px;
-    padding: 10px 0 0 0;
+
+.content-item {
+  /* border: 1px solid black; */
+  width: 35%;
+}
+.content-form {
+  border: 1px solid black;
+  width: 65%;
+}
+
+.content-item {
+  display: block;
+  text-align: center;
+}
+
+.content-item2 {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  margin-top: 10px;
+}
+
+.form-oder {
+  display: block;
+  padding: 50px 100px;
+}
+/*  */
+.size-label {
+  margin-right: 20px;
+}
+.quantity-label {
+  margin-right: 39px;
+}
+
+.note-label {
+  margin-right: 50px;
+}
+
+.price-label {
+  margin-right: 80px;
+}
+
+/* button kích thước */
+.selected {
+  background-color: transparent; /* Màu nền mặc định */
+  border: 1px solid #ccc; /* Đường viền */
+  padding: 5px 10px; /* Kích thước nút */
+  cursor: pointer;
 }
 
 
-.form-body{
-    border: 1px solid black;
-    max-width: 90%;
-}
-.form-row{
-    max-width: 900px;
-    margin: auto;
+.content-form2 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
 
 
-
-.box img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
+.content-form2 button{
+  width: 20px;
+  margin-right: 5px; /* Điều chỉnh khoảng cách giữa button và input */
 }
 
-.form {
-    width: 300px;
+.content-form2 input {
+  width: 50px;
+  margin-right: 5px; /* Điều chỉnh khoảng cách giữa button và input */
 }
 
-.form input,
-.form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
+.content-form4 {
+  margin: 10px 0;
 }
 
-.form button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+.content-form5 {
+  margin-top: 30px;
 }
 
-.container1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #f4f4f4;
+.btn-add__cart {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid;
 }
+
+.btn-cart {
+  border-radius: 5px;
+  padding: 10px 50px;
+  background-color: white;
+  border: 1px solid;
+}
+
