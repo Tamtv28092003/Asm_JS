@@ -80,41 +80,45 @@
                 <div class="content-form">
                     <div class="form-body">
                         <div class="form-row">
-                            <form action="">
+                            <form id="productForm">
                                 <div class="form-oder">
                                     <h4>Trà Ô Long Mãng Cầu</h4>
                                     <div class="content-form1">
                                         <label for="" class="size-label">Kích thước: </label>
-                                        <button class="selected" onclick="changeColor(this)">S</button>
-                                        <button class="selected" onclick="changeColor(this)">M</button>
-                                        <button class="selected" onclick="changeColor(this)">L</button>
+                                        <!-- Add id attribute to the size buttons -->
+                                        <div class="size-btn" data-size="S" id="sizeS">S</div>
+                                        <div class="size-btn" data-size="M" id="sizeM">M</div>
+                                        <div class="size-btn" data-size="L" id="sizeL">L</div>
                                     </div>
-
+                                    
                                     <div class="content-form2">
                                         <label for="" class="quantity-label">Số lượng: </label>
-                                        <button>-</button>
-                                        <input type="number">
-                                        <button>+</button>
+                                        <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                                        <input type="number" id="quantityInput" value="1">
+                                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
                                     </div>
-
+                            
                                     <div class="content-form3" style="display: flex;">
                                         <label for="" class="note-label">Ghi chú:</label>
                                         <div>
-                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <textarea id="noteInput" cols="30" rows="10"></textarea>
                                         </div>
                                     </div>
-
+                            
                                     <div class="content-form4">
                                         <label for="" class="price-label">Giá:</label>
-                                        <span style="color: #125F2F; font-weight: bold;">50.000 đ</span>
+                                        <span id="price" style="color: #125F2F; font-weight: bold;">50.000 đ</span>
                                     </div>
-
+                            
                                     <div class="content-form5">
-                                        <button class="btn-add__cart" type="submit" >THÊM VÀO GIỎ HÀNG</button >
-                                        <button class="btn-cart"  type="submit" >MUA HÀNG</button>
+                                        <button class="btn-add__cart" type="button" onclick="addToCart()">THÊM VÀO GIỎ HÀNG</button>
+                                        <button class="btn-cart" type="button" onclick="buyNow()">MUA HÀNG</button>
                                     </div>
                                 </div>
                             </form>
+                            
+                            <script src="script.js"></script>
+                            
                         </div>
                     </div>
                 </div>

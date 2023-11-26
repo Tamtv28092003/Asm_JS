@@ -47,3 +47,41 @@ function carousel() {
 }
 
 
+// add
+// <!-- Đặt đoạn mã JavaScript sau đoạn mã HTML form -->
+
+    function addToCart() {
+        // Lấy thông tin từ form
+        var size = document.querySelector('.content-form1 button.selected').innerText;
+        var quantity = document.querySelector('.content-form2 input').value;
+        var price = 50000; // Giá cứng là 50.000 đ
+
+        // Tính giá theo số lượng
+        var totalPrice = quantity * price;
+
+        // Tạo đối tượng chứa thông tin sản phẩm
+        var product = {
+            size: size,
+            quantity: quantity,
+            price: totalPrice
+        };
+
+        // Lấy danh sách sản phẩm từ localStorage (nếu có)
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Thêm sản phẩm mới vào danh sách
+        cart.push(product);
+
+        // Lưu danh sách sản phẩm vào localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Chuyển hướng đến trang cart.html
+        window.location.href = 'cart.html';
+    }
+
+    // Thêm sự kiện khi form được submit
+    document.getElementById('orderForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Ngăn chặn form submit mặc định
+        addToCart(); // Gọi hàm thêm vào giỏ hàng
+    });
+

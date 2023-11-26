@@ -205,11 +205,15 @@ img {vertical-align: middle;}
 }
 
 /* button kích thước */
-.selected {
+.size-btn {
   background-color: transparent; /* Màu nền mặc định */
-  border: 1px solid #ccc; /* Đường viền */
-  padding: 5px 10px; /* Kích thước nút */
-  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid;
 }
 
 
@@ -252,3 +256,11 @@ img {vertical-align: middle;}
   border: 1px solid;
 }
 
+/*  */
+.size-btn {
+  cursor: pointer;
+}
+
+.size-btn.selected {
+  background-color: #ccc;
+}
