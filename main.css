@@ -1,38 +1,38 @@
 .container {
-    max-width: 1408px;
-    margin: auto;
+  max-width: 1408px;
+  margin: auto;
 }
 
 .header-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .login {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 .signin{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding-right: 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 15px;
 }
 .tiengviet{
-    color: black;
-    text-decoration: none;
-    padding-right: 15px;
+  color: black;
+  text-decoration: none;
+  padding-right: 15px;
 }
 .cart{
-    width: 20px;
-    padding-right: 50px;
+  width: 20px;
+  padding-right: 50px;
 }
 
 
 .banner{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 
@@ -44,17 +44,34 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 90%;
-  position: relative;
-  margin: auto;
+max-width: 90%;
+position: relative;
+margin: auto;
 }
 
 /* Next & previous buttons */
 .prev {
+cursor: pointer;
+position: absolute;
+top: 50%;
+left: -5%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+background-color: black;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  left: -5%;
+  left: 101%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -67,188 +84,183 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 101%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+right: 0;
+border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.prev, .next,.text {font-size: 11px}
 }
 
 .content {
-  margin-top: 50px;
+margin-top: 50px;
 }
 
 .content-body {
-  max-width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  gap: 32px;
+max-width: 90%;
+margin: auto;
+display: flex;
+justify-content: space-around;
+gap: 32px;
 }
 .content-body_padding{
-    padding: 50px 0 ;
+  padding: 50px 0 ;
 }
 
 .content-item {
-  /* border: 1px solid black; */
-  width: 35%;
+/* border: 1px solid black; */
+width: 35%;
 }
 .content-form {
-  border: 1px solid black;
-  width: 65%;
+border: 1px solid black;
+width: 65%;
 }
 
 .content-item {
-  display: block;
-  text-align: center;
+display: block;
+text-align: center;
 }
 
 .content-item2 {
-  display: flex;
-  justify-content: center;
-  gap: 11px;
-  margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 11px;
+margin-top: 10px;
 }
 
 .form-oder {
-  display: block;
-  padding: 50px 100px;
+display: block;
+padding: 50px 100px;
 }
 /*  */
 .size-label {
-  margin-right: 20px;
+margin-right: 20px;
 }
 .quantity-label {
-  margin-right: 39px;
+margin-right: 39px;
 }
 
 .note-label {
-  margin-right: 50px;
+margin-right: 50px;
 }
 
 .price-label {
-  margin-right: 80px;
+margin-right: 80px;
 }
 
 /* button kích thước */
-.selected {
-  background-color: transparent; /* Màu nền mặc định */
-  border: 1px solid #ccc; /* Đường viền */
-  padding: 5px 10px; /* Kích thước nút */
-  cursor: pointer;
+.size-btn {
+background-color: transparent; /* Màu nền mặc định */
+display: inline-block;
+width: 30px;
+height: 30px;
+align-items: center;
+line-height: 30px;
+text-align: center;
+border: 1px solid;
 }
 
 
 .content-form2 {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
+display: flex;
+align-items: center;
+margin: 10px 0;
 }
 
 
 .content-form2 button{
-  width: 20px;
-  margin-right: 5px; /* Điều chỉnh khoảng cách giữa button và input */
+width: 20px;
+margin-right: 5px; /* Điều chỉnh khoảng cách giữa button và input */
 }
 
 .content-form2 input {
-  width: 50px;
-  margin-right: 5px; /* Điều chỉnh khoảng cách giữa button và input */
+width: 50px;
+margin-right: 5px; /* Điều chỉnh khoảng cách giữa button và input */
 }
 
 .content-form4 {
-  margin: 10px 0;
+margin: 10px 0;
 }
 
 .content-form5 {
-  margin-top: 30px;
+margin-top: 30px;
 }
 
 .btn-add__cart {
-  border-radius: 5px;
-  padding: 10px;
-  background-color: white;
-  border: 1px solid;
+border-radius: 5px;
+padding: 10px;
+background-color: white;
+border: 1px solid;
 }
 
 .btn-cart {
-  border-radius: 5px;
-  padding: 10px 50px;
-  background-color: white;
-  border: 1px solid;
+border-radius: 5px;
+padding: 10px 50px;
+background-color: white;
+border: 1px solid;
 }
 
+/*  */
+.size-btn {
+cursor: pointer;
+}
+
+.size-btn.selected {
+background-color: #ccc;
+}

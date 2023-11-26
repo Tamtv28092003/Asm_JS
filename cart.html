@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giỏ hàng</title>
 </head>
 <body>
-    
+    <!-- cart.html -->
+
+<div id="cartItems"></div>
+
+<div>
+    <button onclick="clearCart()">Xóa giỏ hàng</button>
+</div>
+
+<div id="totalPrice"></div>
+
+<script>
+    // Lấy danh sách sản phẩm từ localStorage
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Hiển thị sản phẩm trong giỏ hàng
+    var cartItemsElement = document.getElementById('cartItems');
+    for (var i = 0; i < cart.length; i++) {
+        var product = cart[i];
+        var productInfo = `Size: ${product.size}, Số lượng: ${product.quantity}, Giá: ${product.price.toLocaleString('vi-VN')} đ`;
+
+        // Hiển thị thông tin sản phẩm và nút xóa
+        var productElement = document.createElement('div');
+        productElement.innerHTML = `${productInfo} <button onclick="removeItem(${i})">Xóa</button>`;
+        cartItemsElement.appendChild(productElement);
+    }
+
+    // Hiển thị tổng giá trị của tất cả sản phẩm
+    var totalPriceElement = document.getElementById('totalPrice');
+    var total = cart.reduce(function (acc, product) {
+        return acc + product.price;
+    }, 0);
+    totalPriceElement.textContent = `Tổng giá trị: ${total.toLocaleString('vi-VN')} đ`;
+
+    // Function để xóa sản phẩm khỏi giỏ hàng
+    function removeItem(index) {
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.reload(); // Tải lại trang để cập nhật thông tin giỏ hàng
+    }
+
+    // Function để xóa toàn bộ giỏ hàng
+    function clearCart() {
+        localStorage.removeItem('cart');
+        window.location.reload(); // Tải lại trang để cập nhật thông tin giỏ hàng
+    }
+</script>
 </body>
 </html>
