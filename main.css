@@ -159,6 +159,9 @@ img {vertical-align: middle;}
   justify-content: space-around;
   gap: 32px;
 }
+.content-body_padding{
+    padding: 50px 0 ;
+}
 
 .content-item {
   /* border: 1px solid black; */
