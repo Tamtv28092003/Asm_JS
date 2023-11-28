@@ -84,3 +84,6 @@ function carousel() {
         event.preventDefault(); // Ngăn chặn form submit mặc định
         addToCart(); // Gọi hàm thêm vào giỏ hàng
     });
+
+
+    
